@@ -1,0 +1,4 @@
+#!/bin/sh
+exec 2>&1
+cd /usr/local/ofbiz
+exec chpst -u ofbiz -U ofbiz java <%= @options[:jvmargs] %> -jar /usr/local/ofbiz/ofbiz.jar
